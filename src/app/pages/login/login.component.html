@@ -1,0 +1,10 @@
+
+<body>	
+	<form #form="ngForm"(submit)="ngOnInit()">
+		<h2>LOGIN</h2>
+		<input [(ngModel)]="Usuario" type="text" placeholder=" Correo" name="Usuario" required>
+		<input type="password" placeholder="Password" name="clave" required>
+		<button id="enviar">Ingresar</button>
+		<a href="/usuario">registrate</a>
+	</form>
+</body>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Menù Lateral con Css</title>
+  <link rel="home.component.css" href="home.component.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+    <div class="btn-menu">
+      <label for="btn-menu">☰</label>
+    </div>
+      <div class="logo">
+        <h1>Inicio</h1>
+      </div>
+      <nav class="menu">
+        <a href="#/Home">Home</a>
+        <a href="/juegos">Jugadores</a>
+        <a href="#">Salir</a>
+      </nav>
+    </div>
+  </header>
+  <div class="capa">
+    <br>
+    <br>
+    <br>
+    <br>
+        <ul class="list-group">
+  <li *ngFor="let mensaje of mensajes" class="list-group-item">
+    <h2>{{mensaje.name}}</h2>
+    <p>{{mensaje.username}}</p>
+  </li>
+
+</ul>
+  </div>
+<!--  --------------->
+<input type="checkbox"  id="btn-menu">
+<div class="container-menu">
+  <div class="cont-menu">
+    <nav>
+     <a href="https://www.facebook.com/SupasStar/">Facebook</a>
+      <a href="https://youtube.com/channel/UCxVZq2UECaLddRUNetfSH-g">Youtube</a>
+      <a href="https://instagram.com/imsu_pastar?utm_medium=copy_link">Instagram</a>
+    </nav>
+    <label for="btn-menu">✖️</label>
+  </div>
+</div>
+</body>
+
+</html>

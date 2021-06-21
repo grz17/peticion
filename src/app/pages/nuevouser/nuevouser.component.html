@@ -1,0 +1,12 @@
+<body>	
+	<form #form="ngForm"(submit)="ngOnInit()">
+		<h2>Nuevo usuario</h2>
+		<input [(ngModel)]="nombre" type="text" placeholder=" Nombre" name="nombre" required>
+		<input  [(ngModel)]="Usuario"type="text" placeholder=" Correo" name="Usuario" required>
+		<input [(ngModel)]="password" type="text" placeholder="Password" name="password" required>
+		<button id="enviar">Guardar</button>
+		<a href="/login">regresar</a>
+
+	</form>
+
+</body>

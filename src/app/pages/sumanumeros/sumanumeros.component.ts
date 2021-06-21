@@ -7,16 +7,18 @@ import {DataService} from '../../servicios/data.service';
 })
 export class SumanumerosComponent implements OnInit {
   mensajes:any[]=[];
-  numero: number=0;
-  numero1:number=0;
-  constructor( private dataService: DataService) { }
+ numero: number=0;
+ numero1: number=0;
 
+  constructor( private dataService: DataService) { }
   ngOnInit(): void {
-    this.dataService.getSuma(this.numero,this.numero1).subscribe( (post:any)=> {
-      this.mensajes=post.valor;
-      console.log(post);
+    this.dataService.getSuma(this.numero, this.numero1).subscribe( (post:any)=> {
+     console.log(post);
+     
+     this.mensajes=post.Valor;
     });
     
   }
 
 }
+ 
